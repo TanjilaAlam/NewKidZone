@@ -281,3 +281,15 @@
   });
 
 })()
+
+/**function show(){
+  var name=document.getElementById("name").value ;
+  var email=document.getElementById("email").value ;
+  var comment=document.getElementById("comment").value ;
+  firebase.database().ref('User/' + email).set({
+      name=name,
+      email=email,
+      comment=comment
+
+  });
+}**/

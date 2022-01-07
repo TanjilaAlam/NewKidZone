@@ -21,6 +21,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 
   <!-- =======================================================
   * Template Name: BizLand - v3.7.0
@@ -29,6 +30,20 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBUzqw6nxrvmGK2OFv-NU2F-FmbLwKWvJ8",
+    authDomain: "realprojectdatabase.firebaseapp.com",
+    databaseURL: "https://realprojectdatabase-default-rtdb.firebaseio.com",
+    projectId: "realprojectdatabase",
+    storageBucket: "realprojectdatabase.appspot.com",
+    messagingSenderId: "114090535996",
+    appId: "1:114090535996:web:cc713721d2de80799ae739"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 <body>
     <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center" style="background-image: url(assets/img/pestal.png);background-size: 100%;">
@@ -146,10 +161,24 @@
              <p>Adam and Eve lived in the bliss of Paradise, as Allah bestowed them with abundant blessings. He gave them both the freedom to enjoy all the marvelous bounties of Paradise and feast to their hearts’ content. However, He laid out a very precise prohibition, to which their adherence was obligatory. He categorically forbade Adam and Eve, in the Quran’s Surah Al-Baqarah, from approaching a certain tree.</p>
             <p>Adam and Eve were thus living a joyous life in Paradise, aware that they could freely enjoy its benefits. The only object they had to abstain from coming close to was the tree specified by Allah. However, the malicious, disgraced Satan had a devious plan to entice them to disobey God.</p>
             <p>Satan’s intention was to deceive Adam and Eve and lure them into violating the prohibition legislated by Allah. Satan’s manipulative plan of deception was to poison their minds by placing desires in their hearts. His approach utilized subtle trickery, rather than him being straightforward in advising them to eat from the forbidden tree.</p>
-            In this sly manner, Satan indoctrinated them, pushing them closer and closer to sinning. Eventually, they would succumb to the corrupt desires Satan had embedded in them, falling into sin and disobeying Allah.
+            <p>In this sly manner, Satan indoctrinated them, pushing them closer and closer to sinning. Eventually, they would succumb to the corrupt desires Satan had embedded in them, falling into sin and disobeying Allah.</p>
         <p>Adam and Eve ate from the prohibited tree, and as a result, their private parts became exposed. They were overcome with shame and sought to clothe themselves using leaves from Paradise. Allah then reprimanded them, upon which they turned to Him in sincere repentance and begged for His forgiveness. They were then made to descend to earth, where they and all their descendants would live and die, prior to the Afterlife</p>
         </div>
       </section><!-- End About Section -->
+      <!--Comment Section-->
+      <section id="comments" class="comments" style="background-color: pink;">
+        <div class="container" data-aos="fade-up">
+          <h3>
+            Comment
+          </h3>
+          <input type="" id="name" name="name" placeholder="Your Name"> <br><br>
+          <input type="" id="email" name="email" placeholder="Your Email"> <br><br>
+          <input type="" id="comment" name="comment" placeholder="Your Comment"><br><br>
+          <button onclick="show()">Submit</button>
+          <br>
+        </div>
+      
+      </section><!-- End Comment Section-->
       <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
         <div class="container" data-aos="fade-up">
@@ -224,7 +253,7 @@
   
     </main><!-- End #main -->
       <!-- ======= Footer ======= -->
-  <footer id="footer" style="background-color: rgb(247, 226, 230);">
+  <footer id="footer" style="background-color: rgb(235, 116, 136);">
 
     <!--<div class="footer-newsletter">
       <div class="container">
@@ -240,7 +269,7 @@
       </div>
     </div>-->
 
-    <div class="footer-top">
+    <div class="footer-top" style="background-color: rgb(248, 196, 205);">
       <div class="container">
         <div class="row">
 
@@ -323,7 +352,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/newJS.js"></script>
 </body>
 
 </html>

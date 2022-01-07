@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgb(238, 214, 222);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #106eea;
+  color: #ea1059;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -1307,6 +1307,11 @@ section {
   display: none;
   transition: 0.6s;
 }
+/*comments*/
+.comment h3{
+  font-family: 'Grandstander', cursive;
+  color: rgb(253, 14, 74);
+}
 
 /*--------------------------------------------------------------
 # Contact
@@ -1398,16 +1403,16 @@ section {
 .contact .php-email-form textarea {
   padding: 12px 15px;
 }
-.contact .php-email-form button[type=submit] {
-  background: #106eea;
+.contact .php-email-form button {
+  background: #e676a5;
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
 }
-.contact .php-email-form button[type=submit]:hover {
-  background: #3b8af2;
+.contact .php-email-form button:hover {
+  background: #e40f2c;
 }
 @-webkit-keyframes animate-loading {
   0% {
