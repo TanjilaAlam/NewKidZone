@@ -23,4 +23,29 @@ function show() {
            // }
           });
  } 
+ function search() 
+{
+    var name= document.getElementById("name1").value;
+
+firebase.database().ref('User/'+ name).once('value').then(function(snapshot) {
+                if (snapshot.exists()) {
+                     var name_ = snapshot.val().name;
+                     var comment_ = snapshot.val().comment;
+                    var mail_ = snapshot.val().email;
+                      document.getElementById("name").value = name_;
+                      document.getElementById("comment").value = comment_;
+                      document.getElementById("email").value =  mail_;
+                }
+                else
+                {
+
+                }
+        }, function(error) {
+            if (error) {
+
+            } else {
+
+            }
+          });
+}
 
