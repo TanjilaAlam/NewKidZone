@@ -5,14 +5,14 @@ function show() {
     var name = document.getElementById("name").value;
     var comment = document.getElementById("comment").value;
     var email=document.getElementById("email").value ;
-    //var email= document.getElementById("email").value;
+    var subject= document.getElementById("subject").value;
 
 
      firebase.database().ref('User/' + name).set({
             name : name,
             comment : comment,
-            email: email
-            //email : email
+            email: email,
+            subject : subject
           //}, function(error) {
             //if (error) {
               // The write failed...
@@ -32,9 +32,11 @@ firebase.database().ref('User/'+ name).once('value').then(function(snapshot) {
                      var name_ = snapshot.val().name;
                      var comment_ = snapshot.val().comment;
                     var mail_ = snapshot.val().email;
+                    var subject_ =snapshot.val().subject;
                       document.getElementById("name").value = name_;
                       document.getElementById("comment").value = comment_;
                       document.getElementById("email").value =  mail_;
+                      document.getElementById("subject").value = subject_;
                 }
                 else
                 {
